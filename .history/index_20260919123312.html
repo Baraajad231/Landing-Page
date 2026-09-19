@@ -1,0 +1,1162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>landing-page</title>
+  </head>
+
+  <body class="font-['Inter'] relative overflow-x-hidden">
+    <!-- Header -->
+    <header
+      id="header"
+      class="fixed top-0 left-0 w-full text-white shadow border-b border-secondary-dark z-50 transition-all duration-300"
+    >
+      <div
+        class="wrapper bg-primary-darkBlue py-4 flex justify-between items-center text-lg font-medium relative px-4 md:px-8"
+      >
+        <div>
+          <img src="src/assets/logo.png" alt="Logo" class="w-36 md:w-48" />
+        </div>
+
+        <input
+          type="checkbox"
+          name="burger"
+          id="burger"
+          class="lg:hidden peer sr-only"
+        />
+        <label
+          for="burger"
+          class="text-2xl lg:hidden flex flex-col gap-1.5 cursor-pointer peer-checked:[&>span:nth-child(1)]:rotate-45 peer-checked:[&>span:nth-child(1)]:translate-y-2.5 peer-checked:[&>span:nth-child(2)]:hidden peer-checked:[&>span:nth-child(3)]:-rotate-45"
+        >
+          <span
+            class="w-8 h-1 rounded-xl bg-white transition-all duration-300"
+          ></span>
+          <span
+            class="w-8 h-1 rounded-xl bg-white transition-all duration-300"
+          ></span>
+          <span
+            class="w-8 h-1 rounded-xl bg-white transition-all duration-300"
+          ></span>
+        </label>
+
+        <!-- Navigation Menu -->
+        <div
+          id="burgerMenu"
+          class="flex gap-6 xl:gap-15 p-4 max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:h-screen max-lg:w-64 max-lg:flex-col max-lg:justify-between max-lg:bg-secondary-dark/95 max-lg:pt-16 max-lg:z-50 max-lg:transition-all max-lg:duration-300 max-lg:ease-in-out max-lg:opacity-0 max-lg:-translate-x-full max-lg:pointer-events-none peer-checked:max-lg:opacity-100 peer-checked:max-lg:translate-x-0 peer-checked:max-lg:pointer-events-auto"
+        >
+          <nav class="flex items-center">
+            <ul class="flex gap-8 max-lg:flex-col max-lg:w-full">
+              <!-- Item 1: Products (With Dropdown) -->
+              <li class="relative group">
+                <button
+                  type="button"
+                  class="cursor-pointer flex gap-2.5 items-center py-2 hover:text-secondary-banana transition duration-200"
+                >
+                  Products
+                  <i
+                    class="fa-solid fa-angle-down text-xs transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180"
+                  ></i>
+                </button>
+
+                <!-- Dropdown Menu -->
+                <ul
+                  class="lg:absolute lg:top-full lg:left-0 lg:bg-primary-liteBlue lg:shadow-xl lg:rounded-lg lg:p-2 lg:-translate-y-2 lg:opacity-0 lg:pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 max-lg:static max-lg:w-full max-lg:bg-transparent max-lg:shadow-none max-lg:pl-4 max-lg:pt-2 transition-all duration-200 z-50"
+                >
+                  <li class="border-b border-white/10 max-lg:border-none">
+                    <a
+                      href="#"
+                      class="block p-2.5 hover:text-secondary-banana rounded transition duration-200"
+                      >Option 1</a
+                    >
+                  </li>
+                  <li class="border-b border-white/10 max-lg:border-none">
+                    <a
+                      href="#"
+                      class="block p-2.5 hover:text-secondary-banana rounded transition duration-200"
+                      >Option 2</a
+                    >
+                  </li>
+                  <li class="border-b border-white/10 max-lg:border-none">
+                    <a
+                      href="#"
+                      class="block p-2.5 hover:text-secondary-banana rounded transition duration-200"
+                      >Option 3</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block p-2.5 hover:text-secondary-banana rounded transition duration-200"
+                      >Option 4</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Item 2: Solutions -->
+              <li class="relative group">
+                <button
+                  type="button"
+                  class="cursor-pointer flex gap-2.5 items-center py-2 hover:text-secondary-banana transition duration-200"
+                >
+                  Solutions
+                  <i
+                    class="fa-solid fa-angle-down text-xs transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180"
+                  ></i>
+                </button>
+              </li>
+
+              <!-- Item 3: Resources -->
+              <li class="relative group">
+                <button
+                  type="button"
+                  class="cursor-pointer flex gap-2.5 items-center py-2 hover:text-secondary-banana transition duration-200"
+                >
+                  Resources
+                  <i
+                    class="fa-solid fa-angle-down text-xs transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180"
+                  ></i>
+                </button>
+              </li>
+
+              <!-- Item 4: Pricing -->
+              <li class="relative group">
+                <a
+                  href="#"
+                  class="block py-2 hover:text-secondary-banana transition duration-200"
+                >
+                  Pricing
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="flex gap-6 max-lg:flex-col">
+            <button class="btn-banana">Login</button>
+            <button class="btn-primary max-md:px-5!">
+              Try Whitepace free <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1. Hero Section -->
+      <section
+        class="wrapper bg-primary-darkBlue text-white pb-16 pt-20 md:pb-25 md:pt-30 lg:pb-32 lg:pt-60 relative overflow-hidden"
+      >
+        <!-- خلفية السكشن المزخرفة -->
+        <img
+          src="/src/assets/sectionBg1.png"
+          alt=""
+          class="absolute inset-0 w-full h-full object-cover pointer-events-none z-0 opacity-40"
+        />
+
+        <!-- محتوى السكشن -->
+        <div
+          class="flex flex-col md:flex-row gap-10 lg:gap-12 items-center justify-between relative z-10"
+        >
+          <!-- النصوص والزر -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h1 class="section-title">Get More Done with whitepace</h1>
+              <p class="text-base lg:text-lg text-gray-200 leading-relaxed">
+                Project management software that enables your teams to
+                collaborate, plan, analyze and manage everyday tasks.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Try Whitepace free <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- الصورة الرئيسية (Placeholder) -->
+          <div
+            class="w-full max-w-lg aspect-4/3 bg-amber-100/20 rounded-xl border border-white/10 shadow-2xl flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="src/assets/hero-img.png"
+              alt="Whitepace Dashboard Showcase"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Project Management & Work Together Section -->
+      <section
+        class="wrapper bg-white text-secondary-dark py-16 lg:py-28 flex flex-col gap-20 relative overflow-hidden"
+      >
+        <!-- Sub-Section 2.1: Project Management -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-12"
+        >
+          <!-- خلفية زُخرفية جانيية -->
+          <img
+            src="/src/assets/sectionBg2.png"
+            alt=""
+            class="absolute -left-20 top-10 w-96 h-96 object-center pointer-events-none z-0 opacity-30"
+          />
+
+          <!-- العمود النصي -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left z-10"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2 class="section-title relative inline-block">
+                Project
+                <span class="relative inline-block">
+                  Management
+                  <img
+                    src="src/assets/wordBg.svg"
+                    alt=""
+                    class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+                  />
+                </span>
+              </h2>
+              <p class="text-base lg:text-lg text-gray-600 leading-relaxed">
+                Images, videos, PDFs and audio files are supported. Create math
+                expressions and diagrams directly from the app. Take photos with
+                the mobile app and save them to a note.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Get Started <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- الصورة -->
+          <div
+            class="w-full max-w-lg aspect-4/3 bg-amber-100 rounded-xl z-10 overflow-hidden shadow-md"
+          >
+            <img
+              src="src/assets/project-mgmt.png"
+              alt="Project Management"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+        </div>
+
+        <!-- Sub-Section 2.2: Work Together -->
+        <div
+          class="flex flex-col-reverse md:flex-row justify-between items-center gap-10 lg:gap-12"
+        >
+          <!-- الصورة -->
+          <div class="w-full max-w-lg aspect-4/3 z-10">
+            <img
+              src="src/assets/img3.png"
+              alt="Work together"
+              class="w-full h-full"
+            />
+          </div>
+
+          <!-- العمود النصي -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left z-10"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2 class="section-title relative inline-block">
+                Work
+                <span class="relative inline-block">
+                  together
+                  <img
+                    src="src/assets/wordBg.svg"
+                    alt=""
+                    class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+                  />
+                </span>
+              </h2>
+              <p class="text-base lg:text-lg text-gray-600 leading-relaxed">
+                With whitepace, share your notes with your colleagues and
+                collaborate on them. You can also publish a note to the internet
+                and share the URL with others.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Try it now <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Use as Extension Section -->
+      <section
+        class="wrapper bg-primary-darkBlue text-white py-16 lg:py-28 relative overflow-hidden"
+      >
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-12"
+        >
+          <!-- العمود النصي -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left z-10"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2 class="section-title relative inline-block">
+                Use as
+                <span class="relative inline-block">
+                  Extension
+                  <img
+                    src="src/assets/wordBg.svg"
+                    alt=""
+                    class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+                  />
+                </span>
+              </h2>
+              <p class="text-base lg:text-lg text-gray-200 leading-relaxed">
+                Use the web clipper extension, available on Chrome and Firefox,
+                to save web pages or take screenshots as notes.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Let’s Go <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- الصورة -->
+          <div
+            class="w-full max-w-lg aspect-4/3 bg-amber-100/20 rounded-xl border border-white/10 shadow-2xl overflow-hidden z-10"
+          >
+            <img
+              src="src/assets/extension-img.png"
+              alt="Use as extension"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Customise Section -->
+      <section
+        class="wrapper bg-white text-secondary-dark py-16 lg:py-28 relative overflow-hidden"
+      >
+        <div
+          class="flex flex-col-reverse md:flex-row justify-between items-center gap-10 lg:gap-12"
+        >
+          <!-- الصورة -->
+          <div
+            class="w-full max-w-lg aspect-4/3 bg-amber-100 rounded-xl border border-white/10 shadow-2xl overflow-hidden z-10"
+          >
+            <img
+              src="src/assets/customise-img.png"
+              alt="Customise it to your needs"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+
+          <!-- العمود النصي -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left z-10"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2 class="section-title relative inline-block">
+                Customise it to <br class="hidden sm:inline" />
+                <span class="relative inline-block">
+                  your needs
+                  <img
+                    src="src/assets/wordBg.svg"
+                    alt=""
+                    class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+                  />
+                </span>
+              </h2>
+              <p class="text-base lg:text-lg text-gray-600 leading-relaxed">
+                Customise the app with plugins, custom themes and multiple text
+                editors (Rich Text or Markdown). Or create your own scripts and
+                plugins using the Extension API.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Let’s Go <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- زبط الresponsive فيه -->
+
+      <section
+        class="wrapper bg-white text-secondary-dark py-16 lg:py-28 flex flex-col gap-12 lg:gap-16 items-center relative overflow-hidden"
+      >
+        <!-- رأس السكشن -->
+        <div
+          class="flex flex-col gap-4 items-center text-center max-w-3xl z-10"
+        >
+          <h2 class="section-title">
+            Choose
+            <span class="relative inline-block">
+              Your Plan
+              <img
+                src="src/assets/wordBg.svg"
+                alt=""
+                class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+              />
+            </span>
+          </h2>
+
+          <p class="text-base lg:text-lg text-gray-600">
+            Whether you want to get organized, keep your personal life on track,
+            or boost workplace productivity, Evernote has the right plan for
+            you.
+          </p>
+        </div>
+
+        <!-- شبكة بطاقات الباقات -->
+        <div
+          class="flex flex-col lg:flex-row gap-8 items-center justify-center w-full z-10"
+        >
+          <!-- 1. Free Plan -->
+          <div
+            class="plan-card border border-secondary-banana rounded-xl flex flex-col justify-between gap-6 p-8 lg:p-10 flex-1 w-full transition-all duration-300 hover:shadow-xl"
+          >
+            <div class="flex flex-col gap-4">
+              <span class="text-2xl font-semibold">Free</span>
+              <h3 class="text-4xl font-bold planPrice">$0</h3>
+              <p class="font-medium text-base lg:text-[18px] text-gray-600">
+                Capture ideas and find them quickly
+              </p>
+
+              <ul
+                class="flex flex-col gap-4 text-sm lg:text-base text-gray-700 mt-2 planFeatures"
+              >
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Sync unlimited devices
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  10 GB monthly uploads
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  200 MB max. note size
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Customize Home dashboard and access extra widgets
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Connect primary Google Calendar account
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Add due dates, reminders, and notifications to your tasks
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-outline justify-center mt-4 planButton">
+              Get Started
+            </button>
+          </div>
+
+          <!-- 2. Personal Plan (Active) -->
+          <div
+            class="plan-card activePlan border border-secondary-banana rounded-xl flex flex-col justify-between gap-6 p-8 lg:p-10 flex-1 w-full transition-all duration-300 shadow-2xl"
+          >
+            <div class="flex flex-col gap-4">
+              <span class="text-2xl font-semibold">Personal</span>
+              <h3 class="text-4xl font-bold planPrice">$11.99</h3>
+              <p class="font-medium text-base lg:text-[18px]">
+                Keep home and family on track
+              </p>
+
+              <ul
+                class="flex flex-col gap-4 text-sm lg:text-base mt-2 planFeatures"
+              >
+                <li class="flex gap-3 items-center">
+                  <i class="fa-regular fa-circle-check"></i>
+                  Sync unlimited devices
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="fa-regular fa-circle-check"></i>
+                  10 GB monthly uploads
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="fa-regular fa-circle-check"></i>
+                  200 MB max. note size
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="fa-regular fa-circle-check"></i>
+                  Customize Home dashboard and access extra widgets
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="fa-regular fa-circle-check"></i>
+                  Connect primary Google Calendar account
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="fa-regular fa-circle-check"></i>
+                  Add due dates, reminders, and notifications to your tasks
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-outline justify-center mt-4 planButton">
+              Get Started
+            </button>
+          </div>
+
+          <!-- 3. Organization Plan -->
+          <div
+            class="plan-card border border-secondary-banana rounded-xl flex flex-col justify-between gap-6 p-8 lg:p-10 flex-1 w-full transition-all duration-300 hover:shadow-xl"
+          >
+            <div class="flex flex-col gap-4">
+              <span class="text-2xl font-semibold">Organization</span>
+              <h3 class="text-4xl font-bold planPrice">$49.99</h3>
+              <p class="font-medium text-base lg:text-[18px] text-gray-600">
+                Capture ideas and find them quickly
+              </p>
+
+              <ul
+                class="flex flex-col gap-4 text-sm lg:text-base text-gray-700 mt-2 planFeatures"
+              >
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Sync unlimited devices
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  10 GB monthly uploads
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  200 MB max. note size
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Customize Home dashboard and access extra widgets
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Connect primary Google Calendar account
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Add due dates, reminders, and notifications to your tasks
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-outline justify-center mt-4 planButton">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- 1. Your Work Everywhere Section -->
+      <section
+        class="wrapper bg-primary-darkBlue text-white py-20 lg:py-32 flex flex-col items-center text-center gap-8 lg:gap-10 relative overflow-hidden"
+      >
+        <!-- خلفية زخرفية -->
+        <img
+          src="/src/assets/sectionBg3.png"
+          alt=""
+          class="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-20 z-0"
+        />
+
+        <div class="flex flex-col gap-4 items-center max-w-3xl z-10">
+          <h2 class="section-title">
+            Your work, everywhere
+            <span class="relative inline-block">
+              you are
+              <img
+                src="src/assets/wordBg.svg"
+                alt=""
+                class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+              />
+            </span>
+          </h2>
+
+          <p class="text-base lg:text-lg text-gray-200 leading-relaxed">
+            Access your notes from your computer, phone or tablet by
+            synchronising with various services, including whitepace, Dropbox
+            and OneDrive. The app is available on Windows, macOS, Linux, Android
+            and iOS. A terminal app is also available!
+          </p>
+        </div>
+
+        <div class="z-10">
+          <button class="btn-primary">
+            Let’s Go <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- 2. 100% Your Data Section -->
+      <section
+        class="wrapper bg-white text-secondary-dark py-16 lg:py-28 relative overflow-hidden"
+      >
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-12"
+        >
+          <!-- النصوص والزر -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left z-10"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2 class="section-title relative inline-block">
+                100%
+                <span class="relative inline-block">
+                  your data
+                  <img
+                    src="src/assets/wordBg.svg"
+                    alt=""
+                    class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+                  />
+                </span>
+              </h2>
+
+              <p class="text-base lg:text-lg text-gray-600 leading-relaxed">
+                The app is open source and your notes are saved to an open
+                format, so you'll always have access to them. Uses End-To-End
+                Encryption (E2EE) to secure your notes and ensure no-one but
+                yourself can access them.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Read more <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- الصورة -->
+          <div
+            class="w-full max-w-lg aspect-4/3 flex items-center justify-center z-10"
+          >
+            <img
+              src="src/assets/img4.png"
+              alt="Data Encryption and Security"
+              class="w-full h-full"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Our Sponsors Section -->
+      <section
+        class="wrapper bg-white py-16 lg:py-24 flex flex-col items-center gap-10 lg:gap-16 relative overflow-hidden"
+      >
+        <div class="text-center z-10">
+          <h2 class="section-title">
+            Our
+            <span class="relative inline-block">
+              sponsors
+              <img
+                src="src/assets/wordBg.svg"
+                alt=""
+                class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+              />
+            </span>
+          </h2>
+        </div>
+
+        <div
+          class="grid grid-cols-2 sm:grid-cols-4 items-center justify-items-center gap-8 lg:gap-16 w-full max-w-4xl z-10"
+        >
+          <img
+            src="src/assets/apple.svg"
+            alt="Apple"
+            class="max-h-10 w-auto object-contain transition duration-300 hover:scale-105"
+          />
+          <img
+            src="src/assets/microsoft.svg"
+            alt="Microsoft"
+            class="max-h-10 w-auto object-contain transition duration-300 hover:scale-105"
+          />
+          <img
+            src="src/assets/slack.svg"
+            alt="Slack"
+            class="max-h-10 w-auto object-contain transition duration-300 hover:scale-105"
+          />
+          <img
+            src="src/assets/google.svg"
+            alt="Google"
+            class="max-h-10 w-auto object-contain transition duration-300 hover:scale-105"
+          />
+        </div>
+      </section>
+
+      <!-- 4. Work with Your Favorite Apps Section -->
+      <section
+        class="wrapper bg-primary-darkBlue text-white py-16 lg:py-28 relative overflow-hidden"
+      >
+        <img
+          src="/src/assets/sectionBg1.png"
+          alt=""
+          class="absolute inset-0 w-full h-full object-cover pointer-events-none z-0 opacity-30"
+        />
+
+        <div
+          class="flex flex-col-reverse md:flex-row justify-between items-center gap-10 lg:gap-12 relative z-10"
+        >
+          <!-- الصورة -->
+          <div
+            class="w-full max-w-lg aspect-4/3 flex items-center justify-center"
+          >
+            <img
+              src="src/assets/img5.png"
+              alt="Integration with favorite apps"
+              class="w-full h-full"
+            />
+          </div>
+
+          <!-- النصوص والزر -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2 class="section-title">
+                Work with Your Favorite Apps Using whitepace
+              </h2>
+
+              <p class="text-base lg:text-lg text-gray-200 leading-relaxed">
+                Whitepace teams up with your favorite software. Integrate with
+                over 1000+ apps with Zapier to have all the tools you need for
+                your project success.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Read more <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. What Our Clients Says (Testimonials) Section -->
+      <section
+        class="wrapper bg-white text-secondary-dark py-16 lg:py-28 flex flex-col gap-12 items-center relative overflow-hidden"
+      >
+        <div class="text-center z-10">
+          <h2 class="section-title">
+            What Our Clients
+            <span class="relative inline-block">
+              Says
+              <img
+                src="src/assets/wordBg.svg"
+                alt=""
+                class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+              />
+            </span>
+          </h2>
+        </div>
+
+        <!-- Cards Container -->
+        <div
+          class="flex flex-col lg:flex-row gap-8 w-full items-stretch justify-center z-10"
+        >
+          <!-- Card 1 (Active) -->
+          <div
+            data-index="0"
+            class="feedback-card flex-1 flex flex-col justify-between gap-8 p-8 lg:p-10 rounded-xl shadow-xl bg-primary-liteBlue text-white cursor-pointer transition duration-300 activeFeedback"
+          >
+            <div class="flex flex-col gap-6">
+              <i class="fa-solid fa-quote-left text-[60px] md:text-[96px]"></i>
+              <p
+                class="pb-6 border-b border-white/20 text-sm md:text-base leading-relaxed"
+              >
+                Whitepate is designed as a collaboration tool for businesses
+                that is a full project management solution.
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <img
+                src="src/assets/avatar1.png"
+                alt="Oberon Shaw"
+                class="w-14 h-14 rounded-full bg-gray-200 object-cover shrink-0"
+              />
+              <div class="flex flex-col gap-1">
+                <h3 class="text-lg font-semibold text-primary-darkBlue">
+                  Oberon Shaw, MCH
+                </h3>
+                <p class="text-xs md:text-sm text-gray-600">
+                  Head of Talent Acquisition, North America
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            data-index="1"
+            class="feedback-card flex-1 flex flex-col justify-between gap-8 p-8 lg:p-10 rounded-xl shadow-xl bg-primary-liteBlue text-white cursor-pointer transition duration-300"
+          >
+            <div class="flex flex-col gap-6">
+              <i class="fa-solid fa-quote-left text-[60px] md:text-[96px]"></i>
+              <p
+                class="pb-6 border-b border-white/20 text-sm md:text-base leading-relaxed"
+              >
+                Whitepate is designed as a collaboration tool for businesses
+                that is a full project management solution.
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <img
+                src="src/assets/avatar2.png"
+                alt="Oberon Shaw"
+                class="w-14 h-14 rounded-full bg-gray-200 object-cover shrink-0"
+              />
+              <div class="flex flex-col gap-1">
+                <h3 class="text-lg font-semibold text-primary-darkBlue">
+                  Oberon Shaw, MCH
+                </h3>
+                <p class="text-xs md:text-sm text-gray-600">
+                  Head of Talent Acquisition, North America
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            data-index="2"
+            class="feedback-card flex-1 flex flex-col justify-between gap-8 p-8 lg:p-10 rounded-xl shadow-xl bg-primary-liteBlue text-white cursor-pointer transition duration-300"
+          >
+            <div class="flex flex-col gap-6">
+              <i class="fa-solid fa-quote-left text-[60px] md:text-[96px]"></i>
+              <p
+                class="pb-6 border-b border-white/20 text-sm md:text-base leading-relaxed"
+              >
+                Whitepate is designed as a collaboration tool for businesses
+                that is a full project management solution.
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <img
+                src="src/assets/avatar3.png"
+                alt="Oberon Shaw"
+                class="w-14 h-14 rounded-full bg-gray-200 object-cover shrink-0"
+              />
+              <div class="flex flex-col gap-1">
+                <h3 class="text-lg font-semibold text-primary-darkBlue">
+                  Oberon Shaw, MCH
+                </h3>
+                <p class="text-xs md:text-sm text-gray-600">
+                  Head of Talent Acquisition, North America
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bullets Navigation -->
+        <div class="flex gap-3 justify-center items-center z-10">
+          <button
+            type="button"
+            aria-label="Go to slide 1"
+            data-index="0"
+            class="feedback-bullet h-3 w-3 rounded-full bg-secondary-blue cursor-pointer transition-all duration-300 activeBullet"
+          ></button>
+          <button
+            type="button"
+            aria-label="Go to slide 2"
+            data-index="1"
+            class="feedback-bullet h-3 w-3 rounded-full bg-secondary-blue cursor-pointer transition-all duration-300"
+          ></button>
+          <button
+            type="button"
+            aria-label="Go to slide 3"
+            data-index="2"
+            class="feedback-bullet h-3 w-3 rounded-full bg-secondary-blue cursor-pointer transition-all duration-300"
+          ></button>
+        </div>
+      </section>
+    </main>
+    <footer class="wrapper bg-primary-darkBlue text-white">
+      <!-- Call To Action Section (CTA) -->
+      <div
+        class="flex flex-col gap-8 md:gap-10 items-center py-16 md:py-28 text-center px-4"
+      >
+        <div class="flex flex-col gap-4 md:gap-6 items-center max-w-3xl">
+          <h2 class="section-title">Try Whitepace today</h2>
+          <p class="text-base sm:text-lg text-gray-300">
+            Get started for free. Add your whole team as your needs grow.
+          </p>
+        </div>
+
+        <!-- استخدام الـ Utility للمحافظة على التناسق -->
+        <button class="btn-primary">
+          Try Taskey free <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <p class="text-gray-300 text-sm md:text-base">
+          On a big team? Contact sales
+        </p>
+
+        <!-- OS Logos -->
+        <div class="flex gap-8 items-center justify-center pt-2">
+          <img
+            src="src/assets/apple.svg"
+            alt="Apple"
+            class="w-8 h-8 object-contain transition hover:scale-110"
+          />
+          <img
+            src="src/assets/window.svg"
+            alt="Windows"
+            class="w-8 h-8 object-contain transition hover:scale-110"
+          />
+          <img
+            src="src/assets/android.svg"
+            alt="Android"
+            class="w-8 h-8 object-contain transition hover:scale-110"
+          />
+        </div>
+      </div>
+
+      <!-- Links Grid Section -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-[#2E4E73]/50"
+      >
+        <!-- Col 1: Brand Info -->
+        <div class="flex flex-col gap-4 sm:col-span-2 lg:col-span-1">
+          <img src="src/assets/logo.png" alt="Whitepace" class="w-44" />
+          <p class="text-gray-300 leading-relaxed text-sm">
+            Whitepace was created for the new ways we live and work. We make a
+            better workspace around the world.
+          </p>
+        </div>
+
+        <!-- Col 2: Product -->
+        <div class="flex flex-col gap-4">
+          <span class="text-lg font-bold text-white">Product</span>
+          <ul class="flex flex-col gap-3 text-gray-300 text-sm">
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Overview</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Customer stories</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Resources -->
+        <div class="flex flex-col gap-4">
+          <span class="text-lg font-bold text-white">Resources</span>
+          <ul class="flex flex-col gap-3 text-gray-300 text-sm">
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Guides & tutorials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Help center</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Company -->
+        <div class="flex flex-col gap-4">
+          <span class="text-lg font-bold text-white">Company</span>
+          <ul class="flex flex-col gap-3 text-gray-300 text-sm">
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Media kit</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Try It Today -->
+        <div class="flex flex-col gap-4 sm:col-span-2 lg:col-span-1">
+          <h5 class="text-2xl font-bold text-white">Try It Today</h5>
+          <p class="text-gray-300 text-sm">
+            Get started for free. Add your whole team as your needs grow.
+          </p>
+          <button class="btn-primary text-sm py-3!">
+            Start today <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom Footer Bar -->
+      <div
+        class="py-8 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-300"
+      >
+        <div
+          class="flex flex-wrap items-center justify-center md:justify-start gap-6 sm:gap-8"
+        >
+          <!-- Language Selector -->
+          <div
+            class="flex items-center gap-2 bg-primary-darkBlue/50 px-2 py-1 rounded border border-white/10"
+          >
+            <i class="fa-solid fa-globe text-white text-xs"></i>
+            <select
+              id="lang"
+              name="lang"
+              class="bg-transparent text-white cursor-pointer focus:outline-none text-xs"
+            >
+              <option value="english" class="text-black">English</option>
+              <option value="arabic" class="text-black">Arabic</option>
+            </select>
+          </div>
+
+          <a
+            href="#"
+            class="hover:text-secondary-banana transition duration-200"
+            >Terms & privacy</a
+          >
+          <a
+            href="#"
+            class="hover:text-secondary-banana transition duration-200"
+            >Security</a
+          >
+          <a
+            href="#"
+            class="hover:text-secondary-banana transition duration-200"
+            >Status</a
+          >
+          <span class="opacity-80">©2021 Whitepace LLC.</span>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex gap-6 items-center">
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="hover:text-secondary-banana transition duration-200"
+          >
+            <i class="fa-brands fa-facebook-f text-base"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="Twitter"
+            class="hover:text-secondary-banana transition duration-200"
+          >
+            <i class="fa-brands fa-twitter text-base"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="LinkedIn"
+            class="hover:text-secondary-banana transition duration-200"
+          >
+            <i class="fa-brands fa-linkedin-in text-base"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+<!-- اعمل section يكون يحوي ال wrapper و div بنمط متكرر لتكون شبه المجموعات المتكررة -->
+<!-- foucs-within -->
+<!-- في القوائم المنسدلة الفرعية (Dropdown Submenus)، إعطاء hidden و block يمنع أيضاً أي حركة أنيميشن (Transition) تماماً.
+
+لجعل ظهور القائمة المنسدلة سلسًا وناعمًا (Fade in مع إزاحة خفيفة لأسفل أو للجانب)، نستخدم الشفافية opacity والتحويل المكاني translate مع إلغاء التفاعل عبر pointer-events-none. -->
+<!-- زبط ال padding تاع الازرار -->
+<!-- زبط خواص الفقرات -->
+<!-- زبط ال wrdBg.svg من جوة  -->
+
+<!-- ??????????????????????????????????????????????????????????? -->
+<!-- زبط الimgs -->
+<!-- زبط الside nav -->
+<!-- اظهر الاقسام بشكل سلس بال js -->
+<!-- زبط ال Plan -->
+<!-- في جزء محذوف وجزء خلفيته بدها تعديل -->
+<!-- تزبيط ال margins -->

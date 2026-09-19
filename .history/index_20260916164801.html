@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>landing-page</title>
+  </head>
+
+  <body class="font-['inter'] relative">
+    <header
+      class="text-white shadow border-b border-secondary-dark sticky top-0 z-50"
+    >
+      <!-- مين افضل الwrapper ولا ال container الجاهز ؟ -->
+      <div
+        class="wrapper bg-primary-darkBlue py-4 flex justify-between items-center text-lg font-medium relative"
+      >
+        <div>
+          <img src="src/assets/logo.png" alt="" class="max-w-47.75" />
+        </div>
+        <input
+          type="checkbox"
+          name="burger"
+          id="burger"
+          class="lg:hidden peer sr-only"
+        />
+        <label
+          for="burger"
+          class="text-2xl md lg:hidden flex flex-col gap-1.5 peer-checked:[&>span:nth-child(1)]:rotate-45 peer-checked:[&>span:nth-child(1)]:translate-y-2.5 peer-checked:[&>span:nth-child(2)]:hidden peer-checked:[&>span:nth-child(3)]:-rotate-45"
+          ><span
+            class="w-10 h-1 rounded-xl bg-white transition-all duration-300"
+          ></span
+          ><span
+            class="w-10 h-1 rounded-xl bg-white transition-all duration-300"
+          ></span
+          ><span
+            class="w-10 h-1 rounded-xl bg-white transition-all duration-300"
+          ></span
+        ></label>
+        <!-- تأكد من تصرف المجموعة عند الحركة للاسفل وهي فاتحة -->
+        <div
+          id="burgerMenu"
+          class="flex gap-6 xl:gap-12.5 p-4 /* تنسيقات الموبايل المتموضعة */ max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:h-screen max-lg:w-64 max-lg:flex-col max-lg:justify-between max-lg:bg-secondary-dark/90 max-lg:pt-10 max-lg:z-50 /* أنيميشن الظهور والإختفاء */ max-lg:transition-all max-lg:duration-300 max-lg:ease-in-out /* الحالة الافتراضية (مخفية) */ max-lg:opacity-0 max-lg:-translate-x-full max-lg:pointer-events-none /* حالة الفتح عند تفعيل الـ Checkbox */ peer-checked:max-lg:opacity-100 peer-checked:max-lg:translate-x-0 peer-checked:max-lg:pointer-events-auto"
+        >
+          <nav class="flex items-center">
+            <ul class="flex gap-8 max-lg:flex-col">
+              <li class="relative group">
+                <button class="cursor-pointer flex gap-2.5 items-center">
+                  Products
+                  <i
+                    class="fa-solid fa-angle-down transition-all group-hover:rotate-180 duration-300 group-focus-within:rotate-180"
+                  ></i>
+                </button>
+                <!-- اعرف شو بتعني -->
+                <ul
+                  class="absolute bg-secondary-blue shadow min-w-30 rounded max-lg:left-full max-lg:top-0 /* أنيميشن الحركة والانتقال */ transition-all duration-200 ease-out /* الحالة الافتراضية (مخفية ومزاحة قليلاً) */ opacity-0 pointer-events-none -translate-y-2 lg:group-hover:translate-y-0 max-lg:-translate-x-2 /* حالة الظهور عند الـ Hover أو الـ Focus */ group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:translate-x-0 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-focus-within:translate-x-0"
+                >
+                  <li class="flex p-4 border-b">
+                    <a href="" class="w-full">1</a>
+                  </li>
+                  <li class="flex p-4 border-b">
+                    <a href="" class="w-full">2</a>
+                  </li>
+                  <li class="flex p-4 border-b">
+                    <a href="" class="w-full">3</a>
+                  </li>
+                  <li class="flex p-4"><a href="" class="w-full">4</a></li>
+                </ul>
+              </li>
+              <li class="relative group">
+                <button class="cursor-pointer flex gap-2.5 items-center">
+                  Solutions<i
+                    class="fa-solid fa-angle-down transition-all group-hover:rotate-180 duration-300 group-focus-within:rotate-180"
+                  ></i>
+                </button>
+              </li>
+              <li class="relative group">
+                <button class="cursor-pointer flex gap-2.5 items-center">
+                  Resources
+                  <i
+                    class="fa-solid fa-angle-down transition-all group-hover:rotate-180 duration-300 group-focus-within:rotate-180"
+                  ></i>
+                </button>
+              </li>
+              <li class="relative group">
+                <button class="cursor-pointer flex gap-2.5 items-center">
+                  Pricing
+                  <i
+                    class="fa-solid fa-angle-down transition-all group-hover:rotate-180 duration-300 group-focus-within:rotate-180"
+                  ></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <div class="flex gap-6 max-lg:flex-col">
+            <button
+              class="px-5 xl:px-10 py-4.5 bg-secondary-banana rounded-lg text-primary-darkBlue cursor-pointer hover:opacity-70 active:scale-90 transition duration-300"
+            >
+              Login
+            </button>
+            <button
+              class="px-3 xl:px-6 py-4.5 bg-secondary-blue rounded-lg cursor-pointer hover:opacity-70 active:scale-90 transition duration-300 flex gap-2.5 items-center"
+            >
+              Try Whitepace free <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="wrapper bg-primary-darkBlue flex gap-5 py-35 relative">
+        <img
+          src="/src/assets/sectionBg1.png"
+          alt=""
+          class="absolute inset-0 w-fit h-fit object-cover top-[26%] object-center pointer-events-none z-0"
+        />
+        <div class="text-white w-167.5 flex flex-col gap-15 justify-center z-1">
+          <div class="flex flex-col gap-6">
+            <h2 class="text-[64px] font-semibold">
+              Get More Done with whitepace
+            </h2>
+            <p>
+              Project management software that enables your teams to
+              collaborate, plan, analyze and manage everyday tasks
+            </p>
+          </div>
+          <button
+            class="px-3 xl:px-6 py-4.5 bg-secondary-blue rounded-lg cursor-pointer hover:opacity-70 active:scale-90 transition duration-300 flex gap-2.5 items-center w-fit"
+          >
+            Try Whitepace free <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <img src="" alt="" class="w-195 h-137.25 bg-amber-100 z-1" />
+      </section>
+      <section class="wrapper bg-primary-darkBlue flex gap-5 py-35 relative">
+        <img
+          src="/src/assets/sectionBg2.png"
+          alt=""
+          class="absolute inset-0 w-[608px] h-[448px] top-[32%] object-center pointer-events-none z-0"
+        />
+
+        <div class="text-white w-167.5 flex flex-col gap-15 justify-center z-1">
+          <div class="flex flex-col gap-6">
+            <h1 class="text-[72px] font-semibold">Project Management</h1>
+            <p>
+              Images, videos, PDFs and audio files are supported. Create math
+              expressions and diagrams directly from the app. Take photos with
+              the mobile app and save them to a note.
+            </p>
+          </div>
+          <button
+            class="px-3 xl:px-6 py-4.5 bg-secondary-blue rounded-lg cursor-pointer hover:opacity-70 active:scale-90 transition duration-300 flex gap-2.5 items-center w-fit"
+          >
+            Try Whitepace free <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <img src="" alt="" class="w-195 h-137.25 bg-amber-100 z-1" />
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+<!-- اعمل section يكون يحوي ال wrapper و div بنمط متكرر لتكون شبه المجموعات المتكررة -->
+<!-- foucs-within -->
+<!-- في القوائم المنسدلة الفرعية (Dropdown Submenus)، إعطاء hidden و block يمنع أيضاً أي حركة أنيميشن (Transition) تماماً.
+
+لجعل ظهور القائمة المنسدلة سلسًا وناعمًا (Fade in مع إزاحة خفيفة لأسفل أو للجانب)، نستخدم الشفافية opacity والتحويل المكاني translate مع إلغاء التفاعل عبر pointer-events-none. -->

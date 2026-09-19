@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-darkBlue: #043873;
+  --color-primary-liteBlue: #4f9cf9;
+  --color-secondary-banana: #ffe492;
+  --color-secondary-blue: #a7cefc;
+  --color-secondary-white: #ffffff;
+  --color-secondary-dark: #212529;
+}
+
+@utility wrapper {
+  max-width: 1920px;
+  padding-inline: 16px;
+  @media (min-width: 16px);
+}

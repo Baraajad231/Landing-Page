@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>landing-page</title>
+  </head>
+
+  <body>
+    <header class="text-white shadow border-b border-secondary-dark">
+      <!-- مين افضل الwrapper ولا ال container الجاهز ؟ -->
+      <div
+        class="wrapper bg-primary-darkBlue py-4 flex justify-between items-center text-lg font-medium"
+      >
+        <div>
+          <img src="src/assets/logo.png" alt="" class="max-w-47.75" />
+        </div>
+        <div class="flex gap-12.5">
+          <nav class="flex items-center">
+            <ul class="flex gap-8">
+              <li class="relative group">
+                <button class="cursor-pointer flex gap-2.5">
+                  Products <i></i>
+                </button>
+                <ul
+                  class="hidden group-hover:block absolute bg-secondary-blue shadow min-w-30 rounded"
+                >
+                  <li class="w-full p-4 border-b"><a href="">1</a></li>
+                  <li class="w-full p-4 border-b"><a href="">2</a></li>
+                  <li class="w-full p-4 border-b"><a href="">3</a></li>
+                  <li class="w-full p-4"><a href="">4</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <button class="cursor-pointer flex gap-2.5">Solutions</button>
+              </li>
+              <li>
+                <button class="cursor-pointer flex gap-2.5">Resources</button>
+              </li>
+              <li>
+                <button class="cursor-pointer flex gap-2.5">Pricing</button>
+              </li>
+            </ul>
+          </nav>
+          <div class="flex gap-6">
+            <button
+              class="px-10 py-4.5 bg-secondary-banana rounded-lg text-primary-darkBlue cursor-pointer hover:opacity-70 active:scale-90 transition duration-300"
+            >
+              Login
+            </button>
+            <button
+              class="px-6 py-4.5 bg-secondary-blue rounded-lg cursor-pointer hover:opacity-70 active:scale-90 transition duration-300"
+            >
+              Try Whitepace free
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="font-['inter']">
+      <div class="container"></div>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
