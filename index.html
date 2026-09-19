@@ -1,0 +1,1165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>landing-page</title>
+    <script type="module" crossorigin src="/Landing-Page/assets/index-C2uUsaNz.js"></script>
+    <link rel="stylesheet" crossorigin href="/Landing-Page/assets/index-BXRihW-O.css">
+  </head>
+
+  <body class="font-['Inter'] relative overflow-x-hidden">
+    <!-- Header -->
+    <header
+      id="header"
+      class="fixed top-0 left-0 w-full text-white shadow border-b border-secondary-dark z-50 transition-all duration-300"
+    >
+      <div
+        class="wrapper bg-primary-darkBlue py-4 flex justify-between items-center text-lg font-medium relative px-4 md:px-8"
+      >
+        <div>
+          <img src="/Landing-Page/assets/logo-DJqRsEaq.png" alt="Logo" class="w-36 md:w-48" />
+        </div>
+
+        <input
+          type="checkbox"
+          name="burger"
+          id="burger"
+          class="lg:hidden peer sr-only"
+        />
+        <label
+          for="burger"
+          class="text-2xl lg:hidden flex flex-col gap-1.5 cursor-pointer peer-checked:[&>span:nth-child(1)]:rotate-45 peer-checked:[&>span:nth-child(1)]:translate-y-2.5 peer-checked:[&>span:nth-child(2)]:hidden peer-checked:[&>span:nth-child(3)]:-rotate-45"
+        >
+          <span
+            class="w-8 h-1 rounded-xl bg-white transition-all duration-300"
+          ></span>
+          <span
+            class="w-8 h-1 rounded-xl bg-white transition-all duration-300"
+          ></span>
+          <span
+            class="w-8 h-1 rounded-xl bg-white transition-all duration-300"
+          ></span>
+        </label>
+
+        <!-- Navigation Menu -->
+        <div
+          id="burgerMenu"
+          class="flex gap-6 xl:gap-15 p-4 max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:h-screen max-lg:w-64 max-lg:flex-col max-lg:justify-between max-lg:bg-secondary-dark/95 max-lg:pt-16 max-lg:z-50 max-lg:transition-all max-lg:duration-300 max-lg:ease-in-out max-lg:opacity-0 max-lg:-translate-x-full max-lg:pointer-events-none peer-checked:max-lg:opacity-100 peer-checked:max-lg:translate-x-0 peer-checked:max-lg:pointer-events-auto"
+        >
+          <nav class="flex items-center">
+            <ul class="flex gap-4 xl:gap-8 max-lg:flex-col max-lg:w-full">
+              <!-- Item 1: Products (With Dropdown) -->
+              <li class="relative group">
+                <button
+                  type="button"
+                  class="cursor-pointer flex gap-2.5 items-center py-2 hover:text-secondary-banana transition duration-200"
+                >
+                  Products
+                  <i
+                    class="fa-solid fa-angle-down text-xs transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180"
+                  ></i>
+                </button>
+
+                <!-- Dropdown Menu -->
+                <ul
+                  class="lg:absolute lg:top-full lg:left-0 lg:bg-primary-liteBlue lg:shadow-xl lg:rounded-lg lg:p-2 lg:-translate-y-2 lg:opacity-0 lg:pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 max-lg:static max-lg:w-full max-lg:bg-transparent max-lg:shadow-none max-lg:pl-4 max-lg:pt-2 transition-all duration-200 z-50"
+                >
+                  <li class="border-b border-white/10 max-lg:border-none">
+                    <a
+                      href="#"
+                      class="block p-2.5 hover:text-secondary-banana rounded transition duration-200"
+                      >Option 1</a
+                    >
+                  </li>
+                  <li class="border-b border-white/10 max-lg:border-none">
+                    <a
+                      href="#"
+                      class="block p-2.5 hover:text-secondary-banana rounded transition duration-200"
+                      >Option 2</a
+                    >
+                  </li>
+                  <li class="border-b border-white/10 max-lg:border-none">
+                    <a
+                      href="#"
+                      class="block p-2.5 hover:text-secondary-banana rounded transition duration-200"
+                      >Option 3</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block p-2.5 hover:text-secondary-banana rounded transition duration-200"
+                      >Option 4</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Item 2: Solutions -->
+              <li class="relative group">
+                <button
+                  type="button"
+                  class="cursor-pointer flex gap-2.5 items-center py-2 hover:text-secondary-banana transition duration-200"
+                >
+                  Solutions
+                  <i
+                    class="fa-solid fa-angle-down text-xs transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180"
+                  ></i>
+                </button>
+              </li>
+
+              <!-- Item 3: Resources -->
+              <li class="relative group">
+                <button
+                  type="button"
+                  class="cursor-pointer flex gap-2.5 items-center py-2 hover:text-secondary-banana transition duration-200"
+                >
+                  Resources
+                  <i
+                    class="fa-solid fa-angle-down text-xs transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180"
+                  ></i>
+                </button>
+              </li>
+
+              <!-- Item 4: Pricing -->
+              <li class="relative group">
+                <button
+                  type="button"
+                  class="cursor-pointer flex gap-2.5 items-center py-2 hover:text-secondary-banana transition duration-200"
+                >
+                  Pricing
+                  <i
+                    class="fa-solid fa-angle-down text-xs transition-transform duration-300 group-hover:rotate-180 group-focus-within:rotate-180"
+                  ></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="flex gap-6 max-lg:flex-col">
+            <button class="btn-banana">Login</button>
+            <button class="btn-primary max-xl:px-5!">
+              Try Whitepace free <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1. Hero Section -->
+      <section
+        class="wrapper bg-primary-darkBlue text-white pb-16 pt-20 md:pb-25 md:pt-30 lg:pb-32 lg:pt-60 relative overflow-hidden"
+      >
+        <!-- خلفية السكشن المزخرفة -->
+        <img
+          src="/Landing-Page/assets/sectionBg1-mrwqTil3.png"
+          alt=""
+          class="absolute inset-0 w-full h-full object-cover pointer-events-none z-0 opacity-40"
+        />
+
+        <!-- محتوى السكشن -->
+        <div
+          class="flex flex-col md:flex-row gap-10 lg:gap-12 items-center justify-between relative z-10"
+        >
+          <!-- النصوص والزر -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h1 class="section-title">Get More Done with whitepace</h1>
+              <p class="text-base lg:text-lg text-gray-200 leading-relaxed">
+                Project management software that enables your teams to
+                collaborate, plan, analyze and manage everyday tasks.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Try Whitepace free <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- الصورة الرئيسية (Placeholder) -->
+          <div
+            class="w-full max-w-lg aspect-4/3 bg-amber-100/20 rounded-xl border border-white/10 shadow-2xl flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="src/assets/hero-img.png"
+              alt="Whitepace Dashboard Showcase"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Project Management & Work Together Section -->
+      <section
+        class="wrapper bg-white text-secondary-dark py-16 lg:py-28 flex flex-col gap-20 relative overflow-hidden"
+      >
+        <!-- Sub-Section 2.1: Project Management -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-12"
+        >
+          <!-- خلفية زُخرفية جانيية -->
+          <img
+            src="/Landing-Page/assets/sectionBg2-CDl2qW4u.png"
+            alt=""
+            class="absolute -left-20 top-10 w-96 h-96 object-center pointer-events-none z-0 opacity-30"
+          />
+
+          <!-- العمود النصي -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left z-10"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2 class="section-title relative inline-block">
+                Project
+                <span class="relative inline-block">
+                  Management
+                  <img
+                    src="/Landing-Page/assets/wordBg-BlzFDI1Z.svg"
+                    alt=""
+                    class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+                  />
+                </span>
+              </h2>
+              <p class="text-base lg:text-lg text-gray-600 leading-relaxed">
+                Images, videos, PDFs and audio files are supported. Create math
+                expressions and diagrams directly from the app. Take photos with
+                the mobile app and save them to a note.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Get Started <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- الصورة -->
+          <div
+            class="w-full max-w-lg aspect-4/3 bg-amber-100 rounded-xl z-10 overflow-hidden shadow-md"
+          >
+            <img
+              src="src/assets/project-mgmt.png"
+              alt="Project Management"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+        </div>
+
+        <!-- Sub-Section 2.2: Work Together -->
+        <div
+          class="flex flex-col-reverse md:flex-row justify-between items-center gap-10 lg:gap-12"
+        >
+          <!-- الصورة -->
+          <div class="w-full max-w-lg aspect-4/3 z-10">
+            <img
+              src="/Landing-Page/assets/img3-CNkM7RIq.png"
+              alt="Work together"
+              class="w-full h-full"
+            />
+          </div>
+
+          <!-- العمود النصي -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left z-10"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2 class="section-title relative inline-block">
+                Work
+                <span class="relative inline-block">
+                  together
+                  <img
+                    src="/Landing-Page/assets/wordBg-BlzFDI1Z.svg"
+                    alt=""
+                    class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+                  />
+                </span>
+              </h2>
+              <p class="text-base lg:text-lg text-gray-600 leading-relaxed">
+                With whitepace, share your notes with your colleagues and
+                collaborate on them. You can also publish a note to the internet
+                and share the URL with others.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Try it now <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Use as Extension Section -->
+      <section
+        class="wrapper bg-primary-darkBlue text-white py-16 lg:py-28 relative overflow-hidden"
+      >
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-12"
+        >
+          <!-- العمود النصي -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left z-10"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2 class="section-title relative inline-block">
+                Use as
+                <span class="relative inline-block">
+                  Extension
+                  <img
+                    src="/Landing-Page/assets/wordBg-BlzFDI1Z.svg"
+                    alt=""
+                    class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+                  />
+                </span>
+              </h2>
+              <p class="text-base lg:text-lg text-gray-200 leading-relaxed">
+                Use the web clipper extension, available on Chrome and Firefox,
+                to save web pages or take screenshots as notes.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Let’s Go <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- الصورة -->
+          <div
+            class="w-full max-w-lg aspect-4/3 bg-amber-100/20 rounded-xl border border-white/10 shadow-2xl overflow-hidden z-10"
+          >
+            <img
+              src="src/assets/extension-img.png"
+              alt="Use as extension"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Customise Section -->
+      <section
+        class="wrapper bg-white text-secondary-dark py-16 lg:py-28 relative overflow-hidden"
+      >
+        <div
+          class="flex flex-col-reverse md:flex-row justify-between items-center gap-10 lg:gap-12"
+        >
+          <!-- الصورة -->
+          <div
+            class="w-full max-w-lg aspect-4/3 bg-amber-100 rounded-xl border border-white/10 shadow-2xl overflow-hidden z-10"
+          >
+            <img
+              src="src/assets/customise-img.png"
+              alt="Customise it to your needs"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+
+          <!-- العمود النصي -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left z-10"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2 class="section-title relative inline-block">
+                Customise it to <br class="hidden sm:inline" />
+                <span class="relative inline-block">
+                  your needs
+                  <img
+                    src="/Landing-Page/assets/wordBg-BlzFDI1Z.svg"
+                    alt=""
+                    class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+                  />
+                </span>
+              </h2>
+              <p class="text-base lg:text-lg text-gray-600 leading-relaxed">
+                Customise the app with plugins, custom themes and multiple text
+                editors (Rich Text or Markdown). Or create your own scripts and
+                plugins using the Extension API.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Let’s Go <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- زبط الresponsive فيه -->
+
+      <section
+        class="wrapper bg-white text-secondary-dark py-16 lg:py-28 flex flex-col gap-12 lg:gap-16 items-center relative overflow-hidden"
+      >
+        <!-- رأس السكشن -->
+        <div
+          class="flex flex-col gap-4 items-center text-center max-w-3xl z-10"
+        >
+          <h2 class="section-title">
+            Choose
+            <span class="relative inline-block">
+              Your Plan
+              <img
+                src="/Landing-Page/assets/wordBg-BlzFDI1Z.svg"
+                alt=""
+                class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+              />
+            </span>
+          </h2>
+
+          <p class="text-base lg:text-lg text-gray-600">
+            Whether you want to get organized, keep your personal life on track,
+            or boost workplace productivity, Evernote has the right plan for
+            you.
+          </p>
+        </div>
+
+        <!-- شبكة بطاقات الباقات -->
+        <div
+          class="flex flex-col lg:flex-row gap-8 items-center justify-center w-full z-10"
+        >
+          <!-- 1. Free Plan -->
+          <div
+            class="plan-card border border-secondary-banana rounded-xl flex flex-col justify-between gap-6 p-8 lg:p-10 flex-1 w-full transition-all duration-300 hover:shadow-xl"
+          >
+            <div class="flex flex-col gap-4">
+              <span class="text-2xl font-semibold">Free</span>
+              <h3 class="text-4xl font-bold planPrice">$0</h3>
+              <p class="font-medium text-base lg:text-[18px] text-gray-600">
+                Capture ideas and find them quickly
+              </p>
+
+              <ul
+                class="flex flex-col gap-4 text-sm lg:text-base text-gray-700 mt-2 planFeatures"
+              >
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Sync unlimited devices
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  10 GB monthly uploads
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  200 MB max. note size
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Customize Home dashboard and access extra widgets
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Connect primary Google Calendar account
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Add due dates, reminders, and notifications to your tasks
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-outline justify-center mt-4 planButton">
+              Get Started
+            </button>
+          </div>
+
+          <!-- 2. Personal Plan (Active) -->
+          <div
+            class="plan-card activePlan border border-secondary-banana rounded-xl flex flex-col justify-between gap-6 p-8 lg:p-10 flex-1 w-full transition-all duration-300 shadow-2xl"
+          >
+            <div class="flex flex-col gap-4">
+              <span class="text-2xl font-semibold">Personal</span>
+              <h3 class="text-4xl font-bold planPrice">$11.99</h3>
+              <p class="font-medium text-base lg:text-[18px]">
+                Keep home and family on track
+              </p>
+
+              <ul
+                class="flex flex-col gap-4 text-sm lg:text-base mt-2 planFeatures"
+              >
+                <li class="flex gap-3 items-center">
+                  <i class="fa-regular fa-circle-check"></i>
+                  Sync unlimited devices
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="fa-regular fa-circle-check"></i>
+                  10 GB monthly uploads
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="fa-regular fa-circle-check"></i>
+                  200 MB max. note size
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="fa-regular fa-circle-check"></i>
+                  Customize Home dashboard and access extra widgets
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="fa-regular fa-circle-check"></i>
+                  Connect primary Google Calendar account
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="fa-regular fa-circle-check"></i>
+                  Add due dates, reminders, and notifications to your tasks
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-outline justify-center mt-4 planButton">
+              Get Started
+            </button>
+          </div>
+
+          <!-- 3. Organization Plan -->
+          <div
+            class="plan-card border border-secondary-banana rounded-xl flex flex-col justify-between gap-6 p-8 lg:p-10 flex-1 w-full transition-all duration-300 hover:shadow-xl"
+          >
+            <div class="flex flex-col gap-4">
+              <span class="text-2xl font-semibold">Organization</span>
+              <h3 class="text-4xl font-bold planPrice">$49.99</h3>
+              <p class="font-medium text-base lg:text-[18px] text-gray-600">
+                Capture ideas and find them quickly
+              </p>
+
+              <ul
+                class="flex flex-col gap-4 text-sm lg:text-base text-gray-700 mt-2 planFeatures"
+              >
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Sync unlimited devices
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  10 GB monthly uploads
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  200 MB max. note size
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Customize Home dashboard and access extra widgets
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Connect primary Google Calendar account
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i
+                    class="fa-regular fa-circle-check text-primary-liteBlue"
+                  ></i>
+                  Add due dates, reminders, and notifications to your tasks
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-outline justify-center mt-4 planButton">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- 1. Your Work Everywhere Section -->
+      <section
+        class="wrapper bg-primary-darkBlue text-white py-20 lg:py-32 flex flex-col items-center text-center gap-8 lg:gap-10 relative overflow-hidden"
+      >
+        <!-- خلفية زخرفية -->
+        <img
+          src="/Landing-Page/assets/sectionBg3-C4GcGiQ5.png"
+          alt=""
+          class="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-20 z-0"
+        />
+
+        <div class="flex flex-col gap-4 items-center max-w-3xl z-10">
+          <h2 class="section-title">
+            Your work, everywhere
+            <span class="relative inline-block">
+              you are
+              <img
+                src="/Landing-Page/assets/wordBg-BlzFDI1Z.svg"
+                alt=""
+                class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+              />
+            </span>
+          </h2>
+
+          <p class="text-base lg:text-lg text-gray-200 leading-relaxed">
+            Access your notes from your computer, phone or tablet by
+            synchronising with various services, including whitepace, Dropbox
+            and OneDrive. The app is available on Windows, macOS, Linux, Android
+            and iOS. A terminal app is also available!
+          </p>
+        </div>
+
+        <div class="z-10">
+          <button class="btn-primary">
+            Let’s Go <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- 2. 100% Your Data Section -->
+      <section
+        class="wrapper bg-white text-secondary-dark py-16 lg:py-28 relative overflow-hidden"
+      >
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-12"
+        >
+          <!-- النصوص والزر -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left z-10"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2 class="section-title relative inline-block">
+                100%
+                <span class="relative inline-block">
+                  your data
+                  <img
+                    src="/Landing-Page/assets/wordBg-BlzFDI1Z.svg"
+                    alt=""
+                    class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+                  />
+                </span>
+              </h2>
+
+              <p class="text-base lg:text-lg text-gray-600 leading-relaxed">
+                The app is open source and your notes are saved to an open
+                format, so you'll always have access to them. Uses End-To-End
+                Encryption (E2EE) to secure your notes and ensure no-one but
+                yourself can access them.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Read more <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- الصورة -->
+          <div
+            class="w-full max-w-lg aspect-4/3 flex items-center justify-center z-10"
+          >
+            <img
+              src="/Landing-Page/assets/img4-DD5_Q8Vg.png"
+              alt="Data Encryption and Security"
+              class="w-full h-full"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Our Sponsors Section -->
+      <section
+        class="wrapper bg-white py-16 lg:py-24 flex flex-col items-center gap-10 lg:gap-16 relative overflow-hidden"
+      >
+        <div class="text-center z-10">
+          <h2 class="section-title">
+            Our
+            <span class="relative inline-block">
+              sponsors
+              <img
+                src="/Landing-Page/assets/wordBg-BlzFDI1Z.svg"
+                alt=""
+                class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+              />
+            </span>
+          </h2>
+        </div>
+
+        <div
+          class="grid grid-cols-2 sm:grid-cols-4 items-center justify-items-center gap-8 lg:gap-16 w-full max-w-4xl z-10"
+        >
+          <img
+            src="data:image/svg+xml,%3csvg%20width='56'%20height='68'%20viewBox='0%200%2056%2068'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M46.3673%2038.1164C44.4968%2028.7026%2053.4321%2023.1815%2053.4321%2023.1815C53.4321%2023.1815%2049.9508%2018.1448%2044.1%2016.8491C38.2521%2015.5505%2035.3252%2017.173%2032.4041%2018.3898C29.4802%2019.6096%2028.0211%2019.6096%2028.0211%2019.6096C23.8016%2019.6096%2020.717%2015.142%2012.6777%2017.1759C7.13915%2018.5737%201.30867%2024.9673%200.255239%2032.5983C-0.798195%2040.232%201.47507%2049.9727%205.85804%2057.5219C10.241%2065.077%2014.7058%2067.9162%2017.8748%2067.9979C21.0439%2068.0767%2024.2072%2065.7277%2028.0211%2065.1557C31.8381%2064.5895%2034.1871%2066.5389%2037.931%2067.5924C41.6603%2068.643%2042.9677%2067.6683%2047.2631%2064.0147C51.5702%2060.3612%2055.4689%2049.8823%2055.4689%2049.8823C55.4689%2049.8823%2048.2378%2047.536%2046.3673%2038.1164Z'%20fill='currentColor'/%3e%3cpath%20d='M38.0857%2010.759C42.2294%206.53665%2040.8258%200%2040.8258%200C40.8258%200%2035.0071%201.02137%2031.1084%205.07751C27.2128%209.13662%2027.8576%2015.5477%2027.8576%2015.5477C27.8576%2015.5477%2033.9419%2014.9787%2038.0857%2010.759Z'%20fill='currentColor'/%3e%3c/svg%3e"
+            alt="Apple"
+            class="max-h-10 w-auto object-contain transition duration-300 hover:scale-105"
+          />
+          <img
+            src="/Landing-Page/assets/microsoft-jwEfqWve.svg"
+            alt="Microsoft"
+            class="max-h-10 w-auto object-contain transition duration-300 hover:scale-105"
+          />
+          <img
+            src="data:image/svg+xml,%3csvg%20width='280'%20height='71'%20viewBox='0%200%20280%2071'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2009_1041)'%3e%3cpath%20d='M89.6797%2055.6258L93.1656%2047.5754C96.9327%2050.3707%20101.937%2051.8242%20106.885%2051.8242C110.539%2051.8242%20112.844%2050.4266%20112.844%2048.3022C112.788%2042.3762%2090.9729%2047.0164%2090.8042%2032.1455C90.748%2024.5982%2097.4949%2018.7841%20107.053%2018.7841C112.732%2018.7841%20118.411%2020.1817%20122.459%2023.3683L119.198%2031.5864C115.487%2029.2384%20110.876%2027.5612%20106.491%2027.5612C103.511%2027.5612%20101.543%2028.9589%20101.543%2030.7479C101.599%2036.562%20123.583%2033.3754%20123.808%2047.5754C123.808%2055.2904%20117.23%2060.7132%20107.784%2060.7132C100.868%2060.7132%2094.515%2059.0919%2089.6797%2055.6258ZM223.439%2044.6683C221.696%2047.6872%20218.435%2049.7557%20214.668%2049.7557C209.101%2049.7557%20204.603%2045.2833%20204.603%2039.7486C204.603%2034.214%20209.101%2029.7416%20214.668%2029.7416C218.435%2029.7416%20221.696%2031.8101%20223.439%2034.829L233.053%2029.5179C229.455%2023.1447%20222.539%2018.7841%20214.668%2018.7841C203.029%2018.7841%20193.583%2028.1762%20193.583%2039.7486C193.583%2051.3211%20203.029%2060.7132%20214.668%2060.7132C222.595%2060.7132%20229.455%2056.4085%20233.053%2049.9793L223.439%2044.6683ZM128.644%201.39746H140.676V59.9305H128.644V1.39746ZM237.776%201.39746V59.9305H249.808V42.3762L264.089%2059.9305H279.495L261.334%2039.0778L278.146%2019.6227H263.415L249.808%2035.7794V1.39746H237.776ZM176.435%2044.7801C174.692%2047.6313%20171.093%2049.7557%20167.045%2049.7557C161.479%2049.7557%20156.981%2045.2833%20156.981%2039.7486C156.981%2034.214%20161.479%2029.7416%20167.045%2029.7416C171.093%2029.7416%20174.692%2031.9778%20176.435%2034.8849V44.7801ZM176.435%2019.6227V24.3746C174.467%2021.0762%20169.575%2018.7841%20164.459%2018.7841C153.889%2018.7841%20145.567%2028.0644%20145.567%2039.6927C145.567%2051.3211%20153.889%2060.7132%20164.459%2060.7132C169.575%2060.7132%20174.467%2058.4211%20176.435%2055.1227V59.8746H188.467V19.6227H176.435Z'%20fill='black'/%3e%3cpath%20d='M15.2945%2044.7243C15.2945%2048.8054%2011.9773%2052.1038%207.87286%2052.1038C3.76844%2052.1038%200.451172%2048.8054%200.451172%2044.7243C0.451172%2040.6431%203.76844%2037.3447%207.87286%2037.3447H15.2945V44.7243ZM19.0054%2044.7243C19.0054%2040.6431%2022.3227%2037.3447%2026.4271%2037.3447C30.5315%2037.3447%2033.8488%2040.6431%2033.8488%2044.7243V63.1731C33.8488%2067.2542%2030.5315%2070.5526%2026.4271%2070.5526C22.3227%2070.5526%2019.0054%2067.2542%2019.0054%2063.1731V44.7243Z'%20fill='%23E01E5A'/%3e%3cpath%20d='M26.4267%2015.0945C22.3222%2015.0945%2019.005%2011.7961%2019.005%207.71498C19.005%203.63387%2022.3222%200.335449%2026.4267%200.335449C30.5311%200.335449%2033.8483%203.63387%2033.8483%207.71498V15.0945H26.4267ZM26.4267%2018.8402C30.5311%2018.8402%2033.8483%2022.1386%2033.8483%2026.2197C33.8483%2030.3008%2030.5311%2033.5992%2026.4267%2033.5992H7.81622C3.7118%2033.5992%200.394531%2030.3008%200.394531%2026.2197C0.394531%2022.1386%203.7118%2018.8402%207.81622%2018.8402H26.4267Z'%20fill='%2336C5F0'/%3e%3cpath%20d='M56.1697%2026.2197C56.1697%2022.1386%2059.487%2018.8402%2063.5914%2018.8402C67.6958%2018.8402%2071.0131%2022.1386%2071.0131%2026.2197C71.0131%2030.3008%2067.6958%2033.5992%2063.5914%2033.5992H56.1697V26.2197ZM52.4588%2026.2197C52.4588%2030.3008%2049.1416%2033.5992%2045.0372%2033.5992C40.9327%2033.5992%2037.6155%2030.3008%2037.6155%2026.2197V7.71498C37.6155%203.63387%2040.9327%200.335449%2045.0372%200.335449C49.1416%200.335449%2052.4588%203.63387%2052.4588%207.71498V26.2197Z'%20fill='%232EB67D'/%3e%3cpath%20d='M45.0372%2055.7935C49.1416%2055.7935%2052.4588%2059.092%2052.4588%2063.1731C52.4588%2067.2542%2049.1416%2070.5526%2045.0372%2070.5526C40.9327%2070.5526%2037.6155%2067.2542%2037.6155%2063.1731V55.7935H45.0372ZM45.0372%2052.1038C40.9327%2052.1038%2037.6155%2048.8054%2037.6155%2044.7243C37.6155%2040.6431%2040.9327%2037.3447%2045.0372%2037.3447H63.6476C67.752%2037.3447%2071.0693%2040.6431%2071.0693%2044.7243C71.0693%2048.8054%2067.752%2052.1038%2063.6476%2052.1038H45.0372Z'%20fill='%23ECB22E'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2009_1041'%3e%3crect%20width='280'%20height='71'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+            alt="Slack"
+            class="max-h-10 w-auto object-contain transition duration-300 hover:scale-105"
+          />
+          <img
+            src="data:image/svg+xml,%3csvg%20width='211'%20height='70'%20viewBox='0%200%20211%2070'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M90.2941%2036.7395C90.2941%2046.7837%2082.4768%2054.1851%2072.8833%2054.1851C63.2897%2054.1851%2055.4724%2046.7837%2055.4724%2036.7395C55.4724%2026.6245%2063.2897%2019.2939%2072.8833%2019.2939C82.4768%2019.2939%2090.2941%2026.6245%2090.2941%2036.7395ZM82.6725%2036.7395C82.6725%2030.4629%2078.1417%2026.1684%2072.8833%2026.1684C67.6248%2026.1684%2063.0941%2030.4629%2063.0941%2036.7395C63.0941%2042.9532%2067.6248%2047.3107%2072.8833%2047.3107C78.1417%2047.3107%2082.6725%2042.9454%2082.6725%2036.7395Z'%20fill='%23EA4335'/%3e%3cpath%20d='M127.854%2036.7395C127.854%2046.7837%20120.037%2054.1851%20110.444%2054.1851C100.85%2054.1851%2093.0327%2046.7837%2093.0327%2036.7395C93.0327%2026.6324%20100.85%2019.2939%20110.444%2019.2939C120.037%2019.2939%20127.854%2026.6245%20127.854%2036.7395ZM120.233%2036.7395C120.233%2030.4629%20115.702%2026.1684%20110.444%2026.1684C105.185%2026.1684%20100.654%2030.4629%20100.654%2036.7395C100.654%2042.9532%20105.185%2047.3107%20110.444%2047.3107C115.702%2047.3107%20120.233%2042.9454%20120.233%2036.7395Z'%20fill='%23FBBC05'/%3e%3cpath%20d='M163.85%2020.3479V51.6681C163.85%2064.5517%20156.291%2069.8137%20147.354%2069.8137C138.942%2069.8137%20133.88%2064.1585%20131.97%2059.5336L138.606%2056.7571C139.788%2059.5965%20142.683%2062.9472%20147.347%2062.9472C153.067%2062.9472%20156.612%2059.3999%20156.612%2052.7221V50.213H156.345C154.64%2052.3288%20151.353%2054.1772%20147.206%2054.1772C138.528%2054.1772%20130.577%2046.5792%20130.577%2036.8024C130.577%2026.9549%20138.528%2019.2939%20147.206%2019.2939C151.345%2019.2939%20154.632%2021.1423%20156.345%2023.1952H156.612V20.3558H163.85V20.3479ZM157.151%2036.8024C157.151%2030.6595%20153.075%2026.1683%20147.887%2026.1683C142.628%2026.1683%20138.223%2030.6595%20138.223%2036.8024C138.223%2042.8824%20142.628%2047.3107%20147.887%2047.3107C153.075%2047.3107%20157.151%2042.8824%20157.151%2036.8024Z'%20fill='%234285F4'/%3e%3cpath%20d='M175.783%201.98975V53.1152H168.35V1.98975H175.783Z'%20fill='%2334A853'/%3e%3cpath%20d='M204.752%2042.4813L210.668%2046.4455C208.758%2049.285%20204.157%2054.1773%20196.207%2054.1773C186.347%2054.1773%20178.984%2046.5163%20178.984%2036.7317C178.984%2026.3572%20186.41%2019.2861%20195.354%2019.2861C204.36%2019.2861%20208.766%2026.4909%20210.206%2030.3843L210.996%2032.3664L187.795%2042.0251C189.571%2045.5253%20192.333%2047.3107%20196.207%2047.3107C200.088%2047.3107%20202.78%2045.3916%20204.752%2042.4813ZM186.543%2036.2047L202.052%2029.7314C201.199%2027.5527%20198.633%2026.0347%20195.612%2026.0347C191.739%2026.0347%20186.347%2029.4719%20186.543%2036.2047Z'%20fill='%23EA4335'/%3e%3cpath%20d='M27.3331%2032.2012V24.7998H52.1465C52.3891%2026.0897%2052.5143%2027.6156%2052.5143%2029.2673C52.5143%2034.8203%2051.0041%2041.6869%2046.1368%2046.5792C41.4027%2051.5344%2035.3538%2054.1772%2027.3409%2054.1772C12.4889%2054.1772%200%2042.0172%200%2027.0886C0%2012.16%2012.4889%200%2027.3409%200C35.5573%200%2041.4105%203.24057%2045.8082%207.46431L40.6123%2012.687C37.4588%209.71383%2033.1863%207.40139%2027.3331%207.40139C16.4875%207.40139%208.00509%2016.1871%208.00509%2027.0886C8.00509%2037.9901%2016.4875%2046.7758%2027.3331%2046.7758C34.3679%2046.7758%2038.3743%2043.9364%2040.941%2041.3565C43.0225%2039.2643%2044.3918%2036.2755%2044.9318%2032.1933L27.3331%2032.2012Z'%20fill='%234285F4'/%3e%3c/svg%3e"
+            alt="Google"
+            class="max-h-10 w-auto object-contain transition duration-300 hover:scale-105"
+          />
+        </div>
+      </section>
+
+      <!-- 4. Work with Your Favorite Apps Section -->
+      <section
+        class="wrapper bg-primary-darkBlue text-white py-16 lg:py-28 relative overflow-hidden"
+      >
+        <img
+          src="/Landing-Page/assets/sectionBg1-mrwqTil3.png"
+          alt=""
+          class="absolute inset-0 w-full h-full object-cover pointer-events-none z-0 opacity-30"
+        />
+
+        <div
+          class="flex flex-col-reverse md:flex-row justify-between items-center gap-10 lg:gap-12 relative z-10"
+        >
+          <!-- الصورة -->
+          <div
+            class="w-full max-w-lg aspect-4/3 flex items-center justify-center"
+          >
+            <img
+              src="/Landing-Page/assets/img5-94Ayshv6.png"
+              alt="Integration with favorite apps"
+              class="w-full h-full"
+            />
+          </div>
+
+          <!-- النصوص والزر -->
+          <div
+            class="max-w-xl w-full flex flex-col gap-8 text-center md:text-left"
+          >
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2 class="section-title">
+                Work with Your Favorite Apps Using whitepace
+              </h2>
+
+              <p class="text-base lg:text-lg text-gray-200 leading-relaxed">
+                Whitepace teams up with your favorite software. Integrate with
+                over 1000+ apps with Zapier to have all the tools you need for
+                your project success.
+              </p>
+            </div>
+
+            <div>
+              <button class="btn-primary mx-auto md:mx-0">
+                Read more <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. What Our Clients Says (Testimonials) Section -->
+      <section
+        class="wrapper bg-white text-secondary-dark py-16 lg:py-28 flex flex-col gap-12 items-center relative overflow-hidden"
+      >
+        <div class="text-center z-10">
+          <h2 class="section-title">
+            What Our Clients
+            <span class="relative inline-block">
+              Says
+              <img
+                src="/Landing-Page/assets/wordBg-BlzFDI1Z.svg"
+                alt=""
+                class="absolute left-0 bottom-1 w-full -z-10 object-contain"
+              />
+            </span>
+          </h2>
+        </div>
+
+        <!-- Cards Container -->
+        <div
+          class="flex flex-col lg:flex-row gap-8 w-full items-stretch justify-center z-10"
+        >
+          <!-- Card 1 (Active) -->
+          <div
+            data-index="0"
+            class="feedback-card flex-1 flex flex-col justify-between gap-8 p-8 lg:p-10 rounded-xl shadow-xl bg-primary-liteBlue text-white cursor-pointer transition duration-300 activeFeedback"
+          >
+            <div class="flex flex-col gap-6">
+              <i class="fa-solid fa-quote-left text-[60px] md:text-[96px]"></i>
+              <p
+                class="pb-6 border-b border-white/20 text-sm md:text-base leading-relaxed"
+              >
+                Whitepate is designed as a collaboration tool for businesses
+                that is a full project management solution.
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <img
+                src="src/assets/avatar1.png"
+                alt="Oberon Shaw"
+                class="w-14 h-14 rounded-full bg-gray-200 object-cover shrink-0"
+              />
+              <div class="flex flex-col gap-1">
+                <h3 class="text-lg font-semibold text-primary-darkBlue">
+                  Oberon Shaw, MCH
+                </h3>
+                <p class="text-xs md:text-sm text-gray-600">
+                  Head of Talent Acquisition, North America
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            data-index="1"
+            class="feedback-card flex-1 flex flex-col justify-between gap-8 p-8 lg:p-10 rounded-xl shadow-xl bg-primary-liteBlue text-white cursor-pointer transition duration-300"
+          >
+            <div class="flex flex-col gap-6">
+              <i class="fa-solid fa-quote-left text-[60px] md:text-[96px]"></i>
+              <p
+                class="pb-6 border-b border-white/20 text-sm md:text-base leading-relaxed"
+              >
+                Whitepate is designed as a collaboration tool for businesses
+                that is a full project management solution.
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <img
+                src="src/assets/avatar2.png"
+                alt="Oberon Shaw"
+                class="w-14 h-14 rounded-full bg-gray-200 object-cover shrink-0"
+              />
+              <div class="flex flex-col gap-1">
+                <h3 class="text-lg font-semibold text-primary-darkBlue">
+                  Oberon Shaw, MCH
+                </h3>
+                <p class="text-xs md:text-sm text-gray-600">
+                  Head of Talent Acquisition, North America
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            data-index="2"
+            class="feedback-card flex-1 flex flex-col justify-between gap-8 p-8 lg:p-10 rounded-xl shadow-xl bg-primary-liteBlue text-white cursor-pointer transition duration-300"
+          >
+            <div class="flex flex-col gap-6">
+              <i class="fa-solid fa-quote-left text-[60px] md:text-[96px]"></i>
+              <p
+                class="pb-6 border-b border-white/20 text-sm md:text-base leading-relaxed"
+              >
+                Whitepate is designed as a collaboration tool for businesses
+                that is a full project management solution.
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <img
+                src="src/assets/avatar3.png"
+                alt="Oberon Shaw"
+                class="w-14 h-14 rounded-full bg-gray-200 object-cover shrink-0"
+              />
+              <div class="flex flex-col gap-1">
+                <h3 class="text-lg font-semibold text-primary-darkBlue">
+                  Oberon Shaw, MCH
+                </h3>
+                <p class="text-xs md:text-sm text-gray-600">
+                  Head of Talent Acquisition, North America
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bullets Navigation -->
+        <div class="flex gap-3 justify-center items-center z-10">
+          <button
+            type="button"
+            aria-label="Go to slide 1"
+            data-index="0"
+            class="feedback-bullet h-3 w-3 rounded-full bg-secondary-blue cursor-pointer transition-all duration-300 activeBullet"
+          ></button>
+          <button
+            type="button"
+            aria-label="Go to slide 2"
+            data-index="1"
+            class="feedback-bullet h-3 w-3 rounded-full bg-secondary-blue cursor-pointer transition-all duration-300"
+          ></button>
+          <button
+            type="button"
+            aria-label="Go to slide 3"
+            data-index="2"
+            class="feedback-bullet h-3 w-3 rounded-full bg-secondary-blue cursor-pointer transition-all duration-300"
+          ></button>
+        </div>
+      </section>
+    </main>
+    <footer class="wrapper bg-primary-darkBlue text-white">
+      <!-- Call To Action Section (CTA) -->
+      <div
+        class="flex flex-col gap-8 md:gap-10 items-center py-16 md:py-28 text-center px-4"
+      >
+        <div class="flex flex-col gap-4 md:gap-6 items-center max-w-3xl">
+          <h2 class="section-title">Try Whitepace today</h2>
+          <p class="text-base sm:text-lg text-gray-300">
+            Get started for free. Add your whole team as your needs grow.
+          </p>
+        </div>
+
+        <!-- استخدام الـ Utility للمحافظة على التناسق -->
+        <button class="btn-primary">
+          Try Taskey free <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <p class="text-gray-300 text-sm md:text-base">
+          On a big team? Contact sales
+        </p>
+
+        <!-- OS Logos -->
+        <div class="flex gap-8 items-center justify-center pt-2">
+          <img
+            src="data:image/svg+xml,%3csvg%20width='56'%20height='68'%20viewBox='0%200%2056%2068'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M46.3673%2038.1164C44.4968%2028.7026%2053.4321%2023.1815%2053.4321%2023.1815C53.4321%2023.1815%2049.9508%2018.1448%2044.1%2016.8491C38.2521%2015.5505%2035.3252%2017.173%2032.4041%2018.3898C29.4802%2019.6096%2028.0211%2019.6096%2028.0211%2019.6096C23.8016%2019.6096%2020.717%2015.142%2012.6777%2017.1759C7.13915%2018.5737%201.30867%2024.9673%200.255239%2032.5983C-0.798195%2040.232%201.47507%2049.9727%205.85804%2057.5219C10.241%2065.077%2014.7058%2067.9162%2017.8748%2067.9979C21.0439%2068.0767%2024.2072%2065.7277%2028.0211%2065.1557C31.8381%2064.5895%2034.1871%2066.5389%2037.931%2067.5924C41.6603%2068.643%2042.9677%2067.6683%2047.2631%2064.0147C51.5702%2060.3612%2055.4689%2049.8823%2055.4689%2049.8823C55.4689%2049.8823%2048.2378%2047.536%2046.3673%2038.1164Z'%20fill='currentColor'/%3e%3cpath%20d='M38.0857%2010.759C42.2294%206.53665%2040.8258%200%2040.8258%200C40.8258%200%2035.0071%201.02137%2031.1084%205.07751C27.2128%209.13662%2027.8576%2015.5477%2027.8576%2015.5477C27.8576%2015.5477%2033.9419%2014.9787%2038.0857%2010.759Z'%20fill='currentColor'/%3e%3c/svg%3e"
+            alt="Apple"
+            class="w-8 h-8 object-contain transition hover:scale-110"
+          />
+          <img
+            src="data:image/svg+xml,%3csvg%20width='60'%20height='60'%20viewBox='0%200%2060%2060'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%2032.8945V50.3713L24.9507%2053.9541V32.8945H0Z'%20fill='white'/%3e%3cpath%20d='M24.9507%206.0498L0%209.63264V27.1094H24.9507V6.0498Z'%20fill='white'/%3e%3cpath%20d='M59.9996%2027.1087V0.720703L30.7412%204.92012V27.1087H59.9996Z'%20fill='white'/%3e%3cpath%20d='M30.7412%2055.0831L59.9996%2059.2784V32.8945H30.7412V55.0831Z'%20fill='white'/%3e%3c/svg%3e"
+            alt="Windows"
+            class="w-8 h-8 object-contain transition hover:scale-110"
+          />
+          <img
+            src="data:image/svg+xml,%3csvg%20width='60'%20height='60'%20viewBox='0%200%2060%2060'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_2009_1414)'%3e%3cpath%20d='M8.32884%2019.4355C7.29504%2019.4355%206.4179%2019.7961%205.69688%2020.5171C4.97585%2021.2381%204.61523%2022.1033%204.61523%2023.1131V38.6178C4.61523%2039.6529%204.97575%2040.5293%205.69688%2041.2504C6.4179%2041.9715%207.29504%2042.3321%208.32884%2042.3321C9.36188%2042.3321%2010.2337%2041.9716%2010.9435%2041.2504C11.652%2040.5294%2012.0072%2039.6529%2012.0072%2038.6178V23.1131C12.0072%2022.1032%2011.6467%2021.2381%2010.9255%2020.5171C10.2044%2019.7961%209.33866%2019.4355%208.32884%2019.4355Z'%20fill='white'/%3e%3cpath%20d='M38.1846%205.51635L40.7448%200.793578C40.9128%200.480911%2040.853%200.241148%2040.5649%200.0725555C40.2521%20-0.0728207%2040.0118%200.000843825%2039.8439%200.288341L37.2479%205.04887C34.9637%204.03894%2032.5477%203.53305%2030.0001%203.53305C27.4519%203.53305%2025.0357%204.03905%2022.7523%205.04887L20.1562%200.288341C19.9875%200.000843825%2019.7472%20-0.0721697%2019.4352%200.0725555C19.1464%200.241908%2019.0866%200.480911%2019.2553%200.793578L21.8156%205.51635C19.2195%206.84025%2017.1519%208.68403%2015.6136%2011.0517C14.0752%2013.4207%2013.3057%2016.0095%2013.3057%2018.8226H46.6582C46.6582%2016.0101%2045.8886%2013.4212%2044.3503%2011.0517C42.8118%208.68403%2040.7562%206.84025%2038.1846%205.51635ZM23.3831%2012.3857C23.1062%2012.6632%2022.7755%2012.8013%2022.3911%2012.8013C22.006%2012.8013%2021.682%2012.6632%2021.4178%2012.3857C21.1535%2012.1095%2021.0213%2011.7801%2021.0213%2011.3944C21.0213%2011.0101%2021.1535%2010.68%2021.4178%2010.4032C21.682%2010.1269%2022.0068%209.98884%2022.3911%209.98884C22.7755%209.98884%2023.1062%2010.1269%2023.3831%2010.4032C23.6593%2010.6807%2023.798%2011.0101%2023.798%2011.3944C23.7973%2011.7795%2023.6586%2012.1095%2023.3831%2012.3857ZM38.5809%2012.3857C38.3161%2012.6632%2037.9914%2012.8013%2037.6077%2012.8013C37.2224%2012.8013%2036.8919%2012.6632%2036.6155%2012.3857C36.3388%2012.1095%2036.2007%2011.7801%2036.2007%2011.3944C36.2007%2011.0101%2036.3388%2010.68%2036.6155%2010.4032C36.8919%2010.1269%2037.2224%209.98884%2037.6077%209.98884C37.9921%209.98884%2038.316%2010.1269%2038.5809%2010.4032C38.8454%2010.6807%2038.9774%2011.0101%2038.9774%2011.3944C38.9774%2011.7795%2038.8453%2012.1095%2038.5809%2012.3857Z'%20fill='white'/%3e%3cpath%20d='M13.4492%2044.1337C13.4492%2045.2406%2013.8336%2046.1775%2014.6025%2046.9463C15.372%2047.7152%2016.3089%2048.0996%2017.4149%2048.0996H20.0834L20.1199%2056.2855C20.1199%2057.3192%2020.4804%2058.197%2021.2015%2058.9182C21.9225%2059.6393%2022.7883%2059.9998%2023.7975%2059.9998C24.8307%2059.9998%2025.7083%2059.6393%2026.4295%2058.9182C27.1506%2058.197%2027.5111%2057.3193%2027.5111%2056.2855V48.1003H32.4869V56.2855C32.4869%2057.3192%2032.8473%2058.197%2033.5684%2058.9182C34.2895%2059.6393%2035.1665%2059.9998%2036.2004%2059.9998C37.2335%2059.9998%2038.1112%2059.6393%2038.8323%2058.9182C39.5535%2058.197%2039.9139%2057.3193%2039.9139%2056.2855V48.1003H42.6183C43.6998%2048.1003%2044.6247%2047.7158%2045.395%2046.947C46.1637%2046.1781%2046.5483%2045.2412%2046.5483%2044.1345V20.1191H13.4492V44.1337Z'%20fill='white'/%3e%3cpath%20d='M51.6709%2019.4355C50.6609%2019.4355%2049.7958%2019.7907%2049.0747%2020.4992C48.3537%2021.2089%2047.9932%2022.0807%2047.9932%2023.1131V38.6178C47.9932%2039.6529%2048.3536%2040.5293%2049.0747%2041.2504C49.7958%2041.9716%2050.6616%2042.3321%2051.6709%2042.3321C52.704%2042.3321%2053.5817%2041.9716%2054.3028%2041.2504C55.0239%2040.5293%2055.3843%2039.6529%2055.3843%2038.6178V23.1131C55.3843%2022.0806%2055.0239%2021.2089%2054.3028%2020.4992C53.5817%2019.7907%2052.704%2019.4355%2051.6709%2019.4355Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_2009_1414'%3e%3crect%20width='60'%20height='60'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+            alt="Android"
+            class="w-8 h-8 object-contain transition hover:scale-110"
+          />
+        </div>
+      </div>
+
+      <!-- Links Grid Section -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-[#2E4E73]/50"
+      >
+        <!-- Col 1: Brand Info -->
+        <div class="flex flex-col gap-4 sm:col-span-2 lg:col-span-1">
+          <img src="/Landing-Page/assets/logo-DJqRsEaq.png" alt="Whitepace" class="w-44" />
+          <p class="text-gray-300 leading-relaxed text-sm">
+            Whitepace was created for the new ways we live and work. We make a
+            better workspace around the world.
+          </p>
+        </div>
+
+        <!-- Col 2: Product -->
+        <div class="flex flex-col gap-4">
+          <span class="text-lg font-bold text-white">Product</span>
+          <ul class="flex flex-col gap-3 text-gray-300 text-sm">
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Overview</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Customer stories</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Resources -->
+        <div class="flex flex-col gap-4">
+          <span class="text-lg font-bold text-white">Resources</span>
+          <ul class="flex flex-col gap-3 text-gray-300 text-sm">
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Guides & tutorials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Help center</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Company -->
+        <div class="flex flex-col gap-4">
+          <span class="text-lg font-bold text-white">Company</span>
+          <ul class="flex flex-col gap-3 text-gray-300 text-sm">
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-secondary-banana transition duration-200"
+                >Media kit</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Try It Today -->
+        <div class="flex flex-col gap-4 sm:col-span-2 lg:col-span-1">
+          <h5 class="text-2xl font-bold text-white">Try It Today</h5>
+          <p class="text-gray-300 text-sm">
+            Get started for free. Add your whole team as your needs grow.
+          </p>
+          <button class="btn-primary text-sm py-3!">
+            Start today <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom Footer Bar -->
+      <div
+        class="py-8 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-300"
+      >
+        <div
+          class="flex flex-wrap items-center justify-center md:justify-start gap-6 sm:gap-8"
+        >
+          <!-- Language Selector -->
+          <div
+            class="flex items-center gap-2 bg-primary-darkBlue/50 px-2 py-1 rounded border border-white/10"
+          >
+            <i class="fa-solid fa-globe text-white text-xs"></i>
+            <select
+              id="lang"
+              name="lang"
+              class="bg-transparent text-white cursor-pointer focus:outline-none text-xs"
+            >
+              <option value="english" class="text-black">English</option>
+              <option value="arabic" class="text-black">Arabic</option>
+            </select>
+          </div>
+
+          <a
+            href="#"
+            class="hover:text-secondary-banana transition duration-200"
+            >Terms & privacy</a
+          >
+          <a
+            href="#"
+            class="hover:text-secondary-banana transition duration-200"
+            >Security</a
+          >
+          <a
+            href="#"
+            class="hover:text-secondary-banana transition duration-200"
+            >Status</a
+          >
+          <span class="opacity-80">©2021 Whitepace LLC.</span>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex gap-6 items-center">
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="hover:text-secondary-banana transition duration-200"
+          >
+            <i class="fa-brands fa-facebook-f text-base"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="Twitter"
+            class="hover:text-secondary-banana transition duration-200"
+          >
+            <i class="fa-brands fa-twitter text-base"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="LinkedIn"
+            class="hover:text-secondary-banana transition duration-200"
+          >
+            <i class="fa-brands fa-linkedin-in text-base"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
+<!-- اعمل section يكون يحوي ال wrapper و div بنمط متكرر لتكون شبه المجموعات المتكررة -->
+<!-- foucs-within -->
+<!-- في القوائم المنسدلة الفرعية (Dropdown Submenus)، إعطاء hidden و block يمنع أيضاً أي حركة أنيميشن (Transition) تماماً.
+
+لجعل ظهور القائمة المنسدلة سلسًا وناعمًا (Fade in مع إزاحة خفيفة لأسفل أو للجانب)، نستخدم الشفافية opacity والتحويل المكاني translate مع إلغاء التفاعل عبر pointer-events-none. -->
+<!-- زبط ال padding تاع الازرار -->
+<!-- زبط خواص الفقرات -->
+<!-- زبط ال wrdBg.svg من جوة  -->
+
+<!-- ??????????????????????????????????????????????????????????? -->
+<!-- زبط الimgs -->
+<!-- زبط الside nav -->
+<!-- اظهر الاقسام بشكل سلس بال js -->
+<!-- زبط ال Plan -->
+<!-- في جزء محذوف وجزء خلفيته بدها تعديل -->
+<!-- تزبيط ال margins -->

@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-darkBlue: #043873;
+  --color-primary-liteBlue: #4f9cf9;
+  --color-secondary-banana: #ffe492;
+  --color-secondary-blue: #a7cefc;
+  --color-secondary-white: #ffffff;
+  --color-secondary-dark: #212529;
+}
+
+@utility wrapper {
+  /* ممكن تحط هاد للbody */
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-inline: 16px;
+  @media (min-width: 640px) {
+    padding-inline: 20px;
+  }
+  @media (min-width: 1536px) {
+    padding-inline: 40px;
+  }
+  @media (min-width: 1920px) {
+    padding-inline: 220px;
+  }
+}
+
+@utility activePlan {
+  padding-block: 80px !important ;
+  color: white;
+  background-color: var(--color-primary-darkBlue);
+  &#planFeatures {
+    font-size: 18px;
+    font-wight: medium;
+  }
+}
