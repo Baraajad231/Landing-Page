@@ -6,7 +6,7 @@ A clean, modern, and fully responsive **Landing Page** built using **HTML5**, **
 
 ## 🌟 Live Demo
 
-👉 [View Live Demo](https://your-demo-link.vercel.app)
+👉 [View Live Demo]([https://your-demo-link.vercel.app](https://baraajad231.github.io/Landing-Page/))
 
 ---
 
